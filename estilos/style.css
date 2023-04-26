@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+:root{
+    --cor-primaria: rgb(90, 6, 6);
+    --cor-secundaria: white;
+    --cor-terciaria: #22D4FD;
+    --cor-hover: #A8DDE9;
+    --font-principal:'krona one', "sans-serif";
+    --fonte-secundaria: 'motserrat', 'sans-serf';
+} 
+
+.cabecalho{
+    background-color: var(--cor-primaria);
+    padding: 2% 0% 2% 15%; 
+}
+
+.cabecalho-menu{
+    display: flex;
+    gap: 80px;
+}
+.menu-link {
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+    font-size: 1.12rem;
+    color:  var(--cor-secundaria);;
+    text-decoration: none;
+}
+body{
+    background-color: rgb(199, 18, 18);
+    color: var(--cor-secundaria);
+    box-sizing: border-box;
+   /*  height: 100vh; */
+    text-align: center;
+}
+
+.titulo-destaque{
+    color: var( --cor-terciaria);
+}
+
+.apresentacao{
+    padding: 5% 15%;
+   display:flex;
+   align-items: center;
+   justify-content: space-between;
+   gap:82px;
+ 
+
+}
+
+.apresentacao-conteudo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.apresentacao-conteudo-titulo{
+    font-size: 2.18rem;
+    font-family: var(--fonte-secundaria);
+}
+
+.minha-apresentacao{
+    font-size: 1.5rem;
+}
+
+.apresentacao-links{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap:32px;
+   
+
+}
+.apresentacao-links-substituto{
+ font-family: var( --font-principal);
+ font-weight: 400;
+ font-size: 1.5rem;
+}
+.apresentacao-links-link{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid  var(--cor-secundaria);;
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.12rem;
+    font-weight:600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: white;
+    font-family: var(--fonte-secundaria);
+
+
+}
+.apresentacao-links-link:hover{
+    background-image: linear-gradient(rgb(80, 3, 3),red)
+  
+}
+
+.imagem-principal{
+    border-radius: 100px;
+    width: 50%;
+    height: 50%;
+   display: flex;
+}
+
+.rodape{
+    color:  var(--cor-secundaria);;
+   background-color: maroon;
+    padding: 23px;
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.12rem;
+    font-weight: 400;
+
+
+
+}
+
+@media(max-width: 1200px) {
+.apresentação{
+    flex-direction: column;
+}
+.cabecalho{
+    padding:10%;
+}
+.cabecalho-menu{
+    justify-content: center;
+
+}
+.apresentacao{
+    flex-direction: column-reverse;
+    padding:5%
+}
+
+.apresentacao-conteudo{
+    width:auto;
+}
+}
